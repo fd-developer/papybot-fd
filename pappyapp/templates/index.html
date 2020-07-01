@@ -1,17 +1,45 @@
-HTML:
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>pappybot-fd</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key={{ config['GOOGLE_APP_KEY'] }}&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+      <style>
+        .heading { 
+          font-size: 1.1em;
+          text-align: left;
+          color: #FFFFFF; }
+        .marge20{
+          margin:20px;
+          padding:10px;
+        }
+        .marge{
+          margin-top:20px;
+        }
+      </style>
+
   </head>
-  <body>
-    <div id="map"></div>
+  <body background="{{ url_for('static', filename='img/fond.jpg') }}">
+    <div class="container">
+      
+      <header>
+        <div class="row marge20">
+          <div class="col-sm-12 col-md-4">
+            <img src="{{ url_for('static', filename='img/papybot.png') }}" height="500" />
+          </div>
+          <div class="col-md-8">
+            <div class="row marge20">
+              <p class="heading">Bonjour mon petit, je m'appelle PapyBot, j'ai un grand âge qui m'a permis de visiter de nombreux lieux avec le temps. Je te propose de me poser une question sur un endroit que tu souhaiterais visiter, je pourrai sûrement te raconter son histoire pour te donner envie d'y aller toi aussi ...</p>
+              <textarea id="form7" class="md-textarea form-control" rows="3">Ecrit ta question ici</textarea>
+              <input type = "submit" class="btn btn-primary marge"  value="Et clique ici pour que je trouve ce que tu cherches">
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+    </div>
   </body>
 </html>

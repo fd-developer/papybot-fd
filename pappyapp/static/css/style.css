@@ -4,10 +4,25 @@
   height: 100%;
 }
 
+input.question{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.white-txt{
+	font-size: 1.1em;
+	text-align: left;
+	color: white;
+}
+
 /* Optional: Makes the sample page fill the window. */
 html,
-body {
+body, p {
   height: 100%;
-  margin: 0;
-  padding: 0;
+
+  padding: 20;
+}
+
+p {
+  padding: 20;
 }
