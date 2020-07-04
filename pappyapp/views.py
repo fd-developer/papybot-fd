@@ -1,66 +1,52 @@
-from flask import Flask, render_template, url_for, request
-import googlemaps
+from flask import Flask, render_template, url_for, request, jsonify
 from datetime import datetime
-import requests
+from .wiki_utils import *
+from .google_utils import *
+import json
+import googlemaps
 
 app = Flask(__name__)
 
 app.config.from_object('config')
 
 @app.route('/')
-@app.route('/index/', methods=['GET', 'POST'])
+@app.route('/index/')
 def index():
-	adress = "?"
-	gps = "?"
-	DATA = []
-	geocode_result = []
-	# {'address_components': [{
-	# 'long_name': 'Rue de la Corvée',
-	# 'short_name': 'Rue de la Corvée',
-	# 'types': ['route']},
-	# {'long_name': 'Torpes', 'short_name': 'Torpes', 'types': ['locality', 'political']},
-	# {'long_name': 'Doubs', 'short_name': 'Doubs', 'types': ['administrative_area_level_2', 'political']},
-	# {'long_name': 'Bourgogne-Franche-Comté', 'short_name': 'Bourgogne-Franche-Comté', 'types': ['administrative_area_level_1', 'political']},
-	# {'long_name': 'France', 'short_name': 'FR', 'types': ['country', 'political']},
-	# {'long_name': '25320', 'short_name': '25320', 'types': ['postal_code']}
-	# ],
-	# 'formatted_address': 'Rue de la Corvée, 25320 Torpes, France',
-	# 'geometry': {'bounds': {'northeast': {'lat': 47.1693941, 'lng': 5.8921323}, 'southwest': {'lat': 47.1680562, 'lng': 5.888587}}, 'location': {'lat': 47.1683729, 'lng': 5.8901987}, 'location_type': 'GEOMETRIC_CENTER', 'viewport': {'northeast': {'lat': 47.1700741302915, 'lng': 5.8921323}, 'southwest': {'lat': 47.1673761697085, 'lng': 5.888587}}}, 
-	# 'place_id': 'ChIJN9tF6LJnjUcRLN2fmdXBFIU', 
-	# 'types': ['route']}]
+	return render_template('index.html')
 
-	if 'adr' in request.form:
-		adress = request.form['adr']
-		gmaps = googlemaps.Client(key='AIzaSyAQgzsxS1Qlzo_kX2nuSE7QP5WKYa_HBkU')
-		# Geocoding an address
-		geocode_result = gmaps.geocode(adress)
-		adress = geocode_result[0]['formatted_address']
-		gps = geocode_result[0]['geometry']['bounds']['northeast']
+@app.route('/question', methods=['GET', 'POST'])
+def query():	
+	gps = "??"
+	response = ""
 
-		S = requests.Session()
-		URL = "https://en.wikipedia.org/w/api.php"
-		PARAMS = {
-		    "action": "query",
-		    "format": "json",
-		    "list": "geosearch",
-		    "gscoord": str(gps['lat']) + "|" + str(gps['lng']),
-		    "gsradius": "10000",
-		    "gslimit": "10"
-		    }
+	# Récupérer la question
+	adress = request.form["query-text-form"]
+	# Nettoyer la question
 
-		R = S.get(url=URL, params=PARAMS)
-		DATA = R.json()
-		#PAGES = DATA['query']['geosearch']
+	# Géocoder la question
+	#gps = ApiGoogle.geocode(adress)
+	gmaps = googlemaps.Client(key='AIzaSyAQgzsxS1Qlzo_kX2nuSE7QP5WKYa_HBkU')
+	geocode_result = gmaps.geocode(adress)
 
-		# for k, v in PAGES.items():
-		#     print("Latitute: " + str(v['coordinates'][0]['lat']))
-		#     print("Longitude: " + str(v['coordinates'][0]['lon']))
+	if geocode_result:
+	 	adress = geocode_result[0]['formatted_address']
+	 	gps = geocode_result[0]['geometry']['bounds']['northeast']
 
-	return render_template('index.html',param=adress, lat=gps, lng=gps, txt=DATA)	
+		# Interroger Wikipedia
+		# pages = ask_wikipedia_by_gps(gps)
+			
+		# 	response += "Voici la liste des 10 premières villes à moins de 10 km de " + adress + " : "
+			
+		# 	for v in pages:
+		# 		#response += str(v['title']) + " : " + str(ask_wikipedia_by_title(str(v['title']))) + " : "
+		# 		response += str(v['title']).split(',')[0] + ", "
+		# else:
+		# 	response = "Je n'ai pas trouvé d'information pertinente sur " + adress
 
-@app.route('/result/')
-def result():
-	return render_template('result.html')
+	return {
+             "adress": adress,
+             "response": gps
+         }
 
 if __name__ == "__main__":
     app.run()

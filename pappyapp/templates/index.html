@@ -1,75 +1,42 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>pappybot-fd</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQgzsxS1Qlzo_kX2nuSE7QP5WKYa_HBkU&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+{% extends 'base.html' %}
 
-      <style>
-        .heading { 
-          font-size: 1.1em;
-          text-align: left;
-          color: #FFFFFF; }
-        .marge20{
-          margin:20px;
-          padding:10px;
-        }
-        .marge{
-          margin-top:20px;
-        }
-        #map {
-          height: 25%;
-        }
-      </style>
+{% block content %}
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQgzsxS1Qlzo_kX2nuSE7QP5WKYa_HBkU&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>  
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 
-  </head>
+<div class="row marge20">
+  <div class="col">
+    <div id="lieu" class = "heading">{{ question }}</div>
+  </div>
+  
+  <div class="col">
+    <div id="lat" class = "heading">{{ lat }}</div>
+  </div>
+    
+  <div class="col">
+    <div id="lng" class = "heading">{{ lng }}</div>
+  </div>
+</div>
 
-  <body background="{{ url_for('static', filename='img/fond.jpg') }}">
-    <div class="container">
-      
-      <header>
-        <div class="row marge20">
-          <div class="col-sm-12 col-md-4">
-            <img id = "papy" src="{{ url_for('static', filename='img/papybot.png') }}" height="500" />
-          </div>
-          <div class="col-md-8">
-            <div class="row marge20">
-              <p class="heading">Bonjour mon petit, je m'appelle PappyBot, j'ai un grand âge qui m'a permis de visiter de nombreux lieux avec le temps. Je te propose de me poser une question sur un endroit que tu souhaiterais visiter, je pourrai sûrement te raconter son histoire pour te donner envie d'y aller toi aussi ...</p>
+<div class="row">
+  <div class="col">
+    <div id="response" class = "heading">{{ response }}</div>
+  </div>
+</div>
 
-              <form action="/index/" method="post">
-                <textarea name="adr" class="md-textarea form-control" rows="3" placeholder = "Ecris ta question ici" required autofocus></textarea>
-                <input type = "submit" class="btn btn-primary marge" id="btn" value="Et clique ici pour que je trouve ce que tu cherches">
-              </form>
+<div class="row">
+  <div class="col">
+    <div id="map"></div>
+  </div>
+</div>
 
-            </div>
-          </div>
-        </div>
-      </header>
+<div class="row d-none justify-content-center" id="loader-query">
+    <div class="loader"></div>
+</div>
 
-      <div class="row marge20">
-        <div class="col">
-          <div id="lieu" class = "heading">{{ param }}</div>
-        </div>
-        <div class="col">
-          <div id="lat" class = "heading">{{ lat }}</div>
-        </div>
-        <div class="col">
-          <div id="lng" class = "heading">{{ lng }}</div>
-        </div>
-      </div>
+<script src="{{url_for('static', filename = 'js/valid_form.js')}}"></script>
 
-      <div class="row">
-        <div class="col">
-          <div id="map"class = "heading">{{ txt }}</div>
-        </div>
-      </div>
-
-    </div>
-  </body>
-</html>
+{% endblock %}

@@ -4,4 +4,19 @@ body {
   padding: 20;
 }
 
+.heading { 
+	font-size: 1.1em;
+	text-align: left;
+	color: #FFFFFF; }
+	.marge20{
+	margin:20px;
+	padding:10px;
+}
 
+.marge{
+	margin-top:20px;
+}
+
+#map {
+	height: 25%;
+}
