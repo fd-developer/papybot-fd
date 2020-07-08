@@ -1,30 +1,32 @@
-import requests
+#! /usr/bin/env python
+# coding: utf-8
 
-class ApiWikipedia:
+import json
+import requests
+import config
+
+class ApiWikimedia:
 
 	def ask_by_gps(self, gps):
 		self.gps = gps
 
-		S = requests.Session()
-		URL = "https://en.wikipedia.org/w/api.php?" \
-		"action=query&format=json&list=geosearch&gscoord="\
-		+ str(self.gps['lat']) + "|" + str(self.gps['lng']) + "&gsradius=10000&gslimit=10"
+		WIKI_URL = config.WIKI_API_URL
+		WIKI_PARAMS = config.WIKI_PARAMS + str(self.gps['lat']) + "|" + str(self.gps['lng'])
 
-		R = S.get(url=URL)
+		R = requests.get(url = WIKI_URL, params = WIKI_PARAMS)
 		data = R.json()
 
+		#return WIKI_URL+"?"+WIKI_PARAMS 
 		return data['query']['geosearch']
 
-	def ask_by_title(self, title):
-		self.title = title
+	def ask_by_pageid(self, pageid):
+		self.pageid = str(pageid)
 
-		S = requests.Session()
-		URL = "https://en.wikipedia.org/wiki/" + self.title
+		WIKI_URL = config.WIKI_API_URL
+		WIKI_PARAMS = "action=query&prop=info&pageids="+self.pageid+"&inprop=url&format=json"
 
-		# URL = "https://en.wikipedia.org/w/api.php?action=parse&page="\
-		# + title + "&prop=text&formatversion=2"
+		Rep = requests.get(url = WIKI_URL, params = WIKI_PARAMS)
+		data = Rep.json()
 
-		R = S.get(url=URL)
-		#data = R.json()
-
-		return URL
+		#return WIKI_URL+"?"+WIKI_PARAMS 
+		return data['query']['pages'][self.pageid]['fullurl']

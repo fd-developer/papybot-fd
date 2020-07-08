@@ -1,42 +1,26 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQgzsxS1Qlzo_kX2nuSE7QP5WKYa_HBkU&callback=initMap&libraries=&v=weekly"
-    defer
-  ></script>  
-  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+<!-- <script src="{{ url_for('static', filename='js/app.js') }}"></script> -->
 
 <div class="row marge20">
   <div class="col">
-    <div id="lieu" class = "heading">{{ question }}</div>
-  </div>
-  
-  <div class="col">
-    <div id="lat" class = "heading">{{ lat }}</div>
-  </div>
-    
-  <div class="col">
-    <div id="lng" class = "heading">{{ lng }}</div>
+    <div id="response" class = "heading"></div>
   </div>
 </div>
 
 <div class="row">
   <div class="col">
-    <div id="response" class = "heading">{{ response }}</div>
+    <div id="map" style = "height: 400px; display: none;"></div>
   </div>
 </div>
 
-<div class="row">
-  <div class="col">
-    <div id="map"></div>
-  </div>
-</div>
-
-<div class="row d-none justify-content-center" id="loader-query">
-    <div class="loader"></div>
-</div>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQgzsxS1Qlzo_kX2nuSE7QP5WKYa_HBkU&callback=initMap&libraries=&v=weekly"
+    defer
+></script> 
 
 <script src="{{url_for('static', filename = 'js/valid_form.js')}}"></script>
+<script src="{{url_for('static', filename = 'js/app.js')}}"></script>
 
 {% endblock %}

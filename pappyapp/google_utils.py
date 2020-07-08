@@ -1,28 +1,42 @@
 #! /usr/bin/env python
 # coding: utf-8
 
+import json
 import requests
-import googlemaps
+import config
 
 class ApiGoogle:
 
-	def init(self):
-		self.adress = ""
-		self.gps = ""
+    GOOGLE_URL = config.GOOGLE_API_URL
+    GOOGLE_KEY = config.GOOGLE_API_KEY
 
-	def geocode(self, adress):
-		self.adress = adress
+    def __init__(self, adress):
+        self.adress = adress
 
-		gmaps = googlemaps.Client(key='AIzaSyAQgzsxS1Qlzo_kX2nuSE7QP5WKYa_HBkU')
-		geocode_result = gmaps.geocode(self.adress)
+    @property
+    def params_url(self):
+        return {"address": self.adress.replace(" ", "+"),
+                "key": self.GOOGLE_KEY}
 
-		if geocode_result:
-			self.adress = geocode_result[0]['formatted_address']
-			self.gps = geocode_result[0]['geometry']['bounds']['northeast']
+    def geocode(self):
+        reqRes = False
+        lat = ""
+        lng = ""
+        city = "?"
 
-		return self.gps
+        res = requests.get(self.GOOGLE_URL, params=self.params_url)
 
-	@property
-	def gps(self):
-		return self.gps
+        if res.status_code == 200:
+            if res.json()['status'] != 'ZERO_RESULTS':
+                response = res.json()["results"][0]
+                reqRes = True
+                city = response['formatted_address']
+                lat = response["geometry"]["location"]["lat"]
+                lng = response["geometry"]["location"]["lng"]
 
+        return {
+            "reqRes": reqRes,
+            "city": city,
+            "lat": lat,
+            "lng": lng
+            }

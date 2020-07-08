@@ -1,28 +1,30 @@
-let form = document.getElementById('form-query');
+$(document).ready(function(){
 
-form.addEventListener('submit', function (event) {
-    event.preventDefault();
+    var $query = $('#query_text_form'),
+        $envoi = $('#query-envoi');
+        $reset = $('query-reset');
 
-    myFormData = new FormData(form);
-    if (myFormData.get('query-text-form') == "") {
-        console.log("aucune question")
-        return 0;
-    }
+    $envoi.on('click', function(e){
+        e.preventDefault(); // on annule la fonction par défaut du bouton d'envoi
 
-    fetch("/question",
-        {
-            method: "POST",
-            body: myFormData
-        })
+        if ($query.val() == "") {
+            alert("N'oublies pas de me poser une question avant de cliquer !")
+            return 0;
+        }
+
+        $.post( "/question", { p1: $query.val() })
+          .done(function( data ) {
+            $('#response').html(data['response']);
+            $('#map').show();
+        });
+
+    });
+
+    $reset.on('click', function(e){
+        e.preventDefault(); // on annule la fonction par défaut du bouton d'envoi
         
-        .then(response => { return response.json() })
-        .then(responseJson => {
-            console.log("on passe ici 1")
-            console.log(responseJson)
-            document.getElementById("lieu").innerHTML = responseJson['adress'] + '<br>';
-            document.getElementById("response").innerHTML = responseJson['response']['lat'] + '<br>';
-            console.log("on passe ici 2")
-        })
-
+        $('#response').html("");
+        $('#map').HIDE();
+        
+    });
 });
-

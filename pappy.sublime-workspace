@@ -1,0 +1,581 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"PARAMS"
+			],
+			[
+				"WIDHT",
+				"width\tproperty"
+			],
+			[
+				"geo",
+				"geocode_result"
+			],
+			[
+				"Ima",
+				"ImageDraw"
+			],
+			[
+				"bg",
+				"background\tAttr"
+			],
+			[
+				"h",
+				"h2\tTag"
+			],
+			[
+				"re",
+				"read"
+			],
+			[
+				"font-",
+				"font-family\tproperty"
+			],
+			[
+				"subs",
+				"substituteProduct"
+			],
+			[
+				"get",
+				"get_product_selected"
+			],
+			[
+				"sel",
+				"selProduct"
+			],
+			[
+				"my",
+				"mySql_select_query"
+			],
+			[
+				"product",
+				"product_url"
+			],
+			[
+				"co",
+				"Code"
+			],
+			[
+				"select",
+				"selectedProduct"
+			],
+			[
+				"ini",
+				"init_db"
+			],
+			[
+				"show",
+				"show_list_categories"
+			],
+			[
+				"cat",
+				"category_selected"
+			],
+			[
+				"op",
+				"open_web_page"
+			],
+			[
+				"d",
+				"donnees"
+			],
+			[
+				"db",
+				"db_connected"
+			],
+			[
+				"susb",
+				"substituteProduct"
+			],
+			[
+				"sele",
+				"selectedProduct"
+			],
+			[
+				"li",
+				"listePruductsCategory"
+			],
+			[
+				"scr",
+				"scriptSQL"
+			],
+			[
+				"conne",
+				"connected"
+			],
+			[
+				"Product",
+				"ProductName"
+			],
+			[
+				"prod",
+				"ProductName"
+			],
+			[
+				"liste",
+				"listeID_Categorie"
+			],
+			[
+				"lis",
+				"listeprod"
+			],
+			[
+				"produc",
+				"product_name"
+			],
+			[
+				"B",
+				"Bouton_view"
+			],
+			[
+				"win",
+				"WIN"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"img_",
+				"img_sol"
+			],
+			[
+				"load",
+				"load_img"
+			],
+			[
+				"w",
+				"window"
+			],
+			[
+				"game",
+				"end_game"
+			],
+			[
+				"th",
+				"in_the_grid"
+			],
+			[
+				"IMG",
+				"IMG_WIN"
+			],
+			[
+				"end",
+				"end_game"
+			],
+			[
+				"IMG_",
+				"IMG_SOL"
+			],
+			[
+				"im",
+				"img_sol"
+			],
+			[
+				"pos",
+				"posXY"
+			],
+			[
+				"POS_",
+				"POS_COLOMN"
+			],
+			[
+				"LI",
+				"POS_LINE"
+			],
+			[
+				"PO",
+				"POS_LINE"
+			],
+			[
+				"POS",
+				"POS_COLOMN"
+			],
+			[
+				"en",
+				"endroit_vide_hasard"
+			],
+			[
+				"charge",
+				"charge_grid"
+			],
+			[
+				"charg",
+				"charge_img"
+			],
+			[
+				"class",
+				"classmethod"
+			],
+			[
+				"img",
+				"img_character"
+			],
+			[
+				"m",
+				"make_coffee"
+			],
+			[
+				"Co",
+				"CoffeeMachine"
+			],
+			[
+				"b",
+				"boil_water"
+			],
+			[
+				"inh",
+				"inhabitants"
+			],
+			[
+				"f",
+				"fin_zone_that_contains"
+			],
+			[
+				"age",
+				"agent_attributes"
+			],
+			[
+				"lo",
+				"longitude"
+			],
+			[
+				"agen",
+				"agent_attributes"
+			],
+			[
+				"attr",
+				"attr_value"
+			],
+			[
+				"ca",
+				"catch_tool"
+			],
+			[
+				"tool",
+				"nb_tools"
+			],
+			[
+				"i",
+				"image"
+			],
+			[
+				"def",
+				"define_key"
+			],
+			[
+				"too",
+				"tool_number"
+			],
+			[
+				"M",
+				"MacGyver"
+			],
+			[
+				"de",
+				"deplace"
+			],
+			[
+				"ma",
+				"mac_gyver"
+			],
+			[
+				"loa",
+				"load_tools"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/tmp"
+	],
+	"file_history":
+	[
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/wiki_utils.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/google_utils.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/clean_query.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/__init__.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/index.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/base.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static/js/valid_form.js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/views.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/utils.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static/css/style.css",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/google/map.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/google/app.js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/app.js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/map.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/style.css",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static/js/app.js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/config.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/run.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd copie 2/pappyapp/views.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static/js/test.js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/fbapp/views.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/run.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/fbapp/utils.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/fbapp/__init__.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/config.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/index copie.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/13 - Projet final/aafc/static/css/style.css",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/13 - Projet final/aafc/templates/base.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/13 - Projet final/aafc/views.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/13 - Projet final/aafc/templates/index.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/13 - Projet final/aafc/templates/connect.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/.gitignore",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/Procfile",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/models.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/index.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/app.js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/map.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/style.css",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/documentation.txt",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/fbapp/templates/card.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/fbapp/templates/result.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/fbapp/templates/index.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/fbapp/templates/base.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/fbapp/models.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/procfile",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/views.py",
+		"/Users/fdeschamps/Desktop/index.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/BOOTSTRAP/lessons.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/13 - Projet final/aafc/utils.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/13 - Projet final/run.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/BOOTSTRAP/index.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/13 - Projet final/config.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/13 - Projet final/aafc/__init__.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/13 - Projet final/views.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/BOOTSTRAP/css/style.css",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/AAFC/README.md",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/fbapp/templates/utils.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/fbapp/template/result.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/fbapp/template/index.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/app.db",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/fbapp/config.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/flask/fbapp/run.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/13 - Projet final/memo.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/BOOTSTRAP/memo.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/JQUERY/exemple/index.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/JQUERY/exemple/style.css",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/JQUERY/exemple/function.js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/JQUERY/index.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/memo.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/JAVASCRIPT/styles.css",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/JAVASCRIPT/module.js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/JAVASCRIPT/index.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/JAVASCRIPT/functions.js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/JAVASCRIPT/Book.js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/style.css",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/HTML5-CSS/test.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/memo.txt",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/JAVASCRIPT/server.js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/JAVASCRIPT/package.json",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/JAVASCRIPT/package-lock.json",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/CV/style.css",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/CV/index.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/TP/index.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/TP/style.css",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/TP/TP1.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/TP/TP1",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07/style.css",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07/test.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/06 - PROJET 6 - 80H - Modeliser une BDD /CREATE_BDD_P6.sql",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/06 - PROJET 6 - 80H - Modeliser une BDD /Livrable/CREATE_BDD.sql",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/06 - PROJET 6 - 80H - Modeliser une BDD /info API openmapstreet",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/06 - PROJET 6 - 80H - Modeliser une BDD /Ressources/p6 values.sql",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/06 - PROJET 6 - 80H - Modeliser une BDD /Insertion des données.sql",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/06 - PROJET 6 - 80H - Modeliser une BDD /modif key.sql",
+		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/ressources/createdb.sql",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - 70H - OpenFood/Livrable/P5_02_Script.sql",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/06 - PROJET 6 - 80H - Modeliser une BDD /BDD/Corriger le pb de CEST dans mysql.txt",
+		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/ressources/connect.json",
+		"/Users/fdeschamps/Desktop/Chomage partiel/DIRRECTE_VFCONFORT_20200426_09481370.XML",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/06 - PROJET 6 - 80H - Modeliser une BDD /createdb.sql",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/06 - PROJET 6 - 80H - Modeliser une BDD /Ressources/p6 user values.sql",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/06 - PROJET 6 - 80H - Modeliser une BDD /Ressources/BDD.sql",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/06 - PROJET 6 - 80H - Modeliser une BDD /Ressources/dumpBDD.sql",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/06 - PROJET 6 - 80H - Modeliser une BDD /ressources.txt",
+		"/Users/fdeschamps/createdb.sql",
+		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/api.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/Autres ressources/insertmongotomysql.py",
+		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/wsearch_substitute.py",
+		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/wproduct_sheet.py",
+		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/wconfig.py",
+		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/main.py",
+		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/database.py",
+		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/wmenu.py",
+		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/wlist_substitute.py",
+		"/Users/fdeschamps/Desktop/dossier sans titre 2/wmenu.py",
+		"/Users/fdeschamps/Desktop/dossier sans titre 2/wlist_substitute.py",
+		"/Users/fdeschamps/Desktop/dossier sans titre 2/wconfig.py",
+		"/Users/fdeschamps/Desktop/dossier sans titre 2/wsearch_substitute.py",
+		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/README.md",
+		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/.gitignore",
+		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/Database.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/P5.sublime-project",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Wsearch_substitute.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Wmenu.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Wlist_substitute.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Wconfig.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/main.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Database.py"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 361.0
+	},
+	"pinned_build_system": "",
+	"project": "pappy.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

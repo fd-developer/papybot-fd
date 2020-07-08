@@ -3,7 +3,7 @@ from datetime import datetime
 from .wiki_utils import *
 from .google_utils import *
 import json
-import googlemaps
+import requests
 
 app = Flask(__name__)
 
@@ -15,38 +15,34 @@ def index():
 	return render_template('index.html')
 
 @app.route('/question', methods=['GET', 'POST'])
-def query():	
-	gps = "??"
-	response = ""
+def query():
+	
+    # Récupérer la question
+    adress = request.form["p1"]
+    # Nettoyer la question
 
-	# Récupérer la question
-	adress = request.form["query-text-form"]
-	# Nettoyer la question
+    # Géocoder la question
+    place = ApiGoogle(adress)
+    geocode_result = place.geocode()
 
-	# Géocoder la question
-	#gps = ApiGoogle.geocode(adress)
-	gmaps = googlemaps.Client(key='AIzaSyAQgzsxS1Qlzo_kX2nuSE7QP5WKYa_HBkU')
-	geocode_result = gmaps.geocode(adress)
+    # Interroger Wikipedia
+    wiki = ApiWikimedia()
+    pages = wiki.ask_by_gps(geocode_result)
+    	
+    response = "Je me souviens avoir visité un endroit vers " + geocode_result["city"] +".<BR>" \
+                "Il y a plein de chose à voir à moins de " \
+                "10 km de cet endroit, par exemple : <BR><BR>"
+		
+    for v in pages:
+        page = ApiWikimedia()
+        pageUrl = page.ask_by_pageid(v['pageid'])
+        response += str(v['title']).split(',')[0] + "<a href='"+pageUrl+"' target=_blanck> (Voir)</a><BR>"
 
-	if geocode_result:
-	 	adress = geocode_result[0]['formatted_address']
-	 	gps = geocode_result[0]['geometry']['bounds']['northeast']
-
-		# Interroger Wikipedia
-		# pages = ask_wikipedia_by_gps(gps)
-			
-		# 	response += "Voici la liste des 10 premières villes à moins de 10 km de " + adress + " : "
-			
-		# 	for v in pages:
-		# 		#response += str(v['title']) + " : " + str(ask_wikipedia_by_title(str(v['title']))) + " : "
-		# 		response += str(v['title']).split(',')[0] + ", "
-		# else:
-		# 	response = "Je n'ai pas trouvé d'information pertinente sur " + adress
-
-	return {
-             "adress": adress,
-             "response": gps
-         }
+    return {
+        "response": response,
+        "lat": geocode_result['lat'],
+        "lng": geocode_result['lng']
+    }
 
 if __name__ == "__main__":
     app.run()
