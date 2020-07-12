@@ -28,19 +28,19 @@
           <form class="col-lg-12" id="form-query" action="#">
               <div class="form-group">
 
-                <textarea id="query_text_form" name="query-text-form" class="md-textarea form-control" rows="3" placeholder = "Ecris ta question ici" required autofocus></textarea>
+                <textarea id="query_text_form" name="query-text-form" class="md-textarea form-control" rows="3" placeholder = "Pose moi ta question ici" autofocus>25320 Torpes</textarea>
               </div>
               <p><button id="query-envoi" type="submit" class="btn btn-primary">et cliques ici pour que je recherche cet endroit pour toi</button>
               <button id="query-reset" type="SUBMIT" class="btn btn-primary">reset</button>
               </p>
           </form>
         </div>
-        {% block content %}{% endblock %}
+
       </div>
     </div>
   </header>
 
-  
+  {% block content %}{% endblock %}
 
   <footer>
   </footer>

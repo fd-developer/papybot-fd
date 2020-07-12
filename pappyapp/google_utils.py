@@ -38,5 +38,7 @@ class ApiGoogle:
             "reqRes": reqRes,
             "city": city,
             "lat": lat,
-            "lng": lng
+            "lng": lng 
             }
+
+            

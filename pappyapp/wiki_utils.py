@@ -7,26 +7,48 @@ import config
 
 class ApiWikimedia:
 
-	def ask_by_gps(self, gps):
+	def search_pages_by_gps(self, gps):
 		self.gps = gps
-
 		WIKI_URL = config.WIKI_API_URL
-		WIKI_PARAMS = config.WIKI_PARAMS + str(self.gps['lat']) + "|" + str(self.gps['lng'])
+		WIKI_PARAMS = config.WIKI_PARAMS_GPS + str(self.gps['lat']) + "|" + str(self.gps['lng'])
 
 		R = requests.get(url = WIKI_URL, params = WIKI_PARAMS)
 		data = R.json()
 
-		#return WIKI_URL+"?"+WIKI_PARAMS 
 		return data['query']['geosearch']
 
-	def ask_by_pageid(self, pageid):
+	# def search_url_by_pageid(self, pageid):
+	# 	self.pageid = str(pageid)
+	# 	WIKI_URL = config.WIKI_API_URL
+	# 	WIKI_PARAMS = config.WIKI_PARAMS_PAGEID + self.pageid
+
+	# 	Rep = requests.get(url = WIKI_URL, params = WIKI_PARAMS)
+	# 	data = Rep.json()
+
+	# 	return data['query']['pages'][str(self.pageid)]['fullurl']
+
+	# def search_history_by_pageid(self, pageid):
+	# 	self.pageid = str(pageid)
+	# 	WIKI_URL = config.WIKI_API_URL
+	# 	WIKI_PARAMS = config.WIKI_PARAMS_HISTORY_PAGEID + self.pageid
+
+	# 	R = requests.get(url = WIKI_URL, params = WIKI_PARAMS)
+	# 	data = R.json()
+
+	# 	return data['query']['pages'][str(self.pageid)]['extract']
+
+	def search_data_by_pageid(self, pageid, datatype):
 		self.pageid = str(pageid)
-
 		WIKI_URL = config.WIKI_API_URL
-		WIKI_PARAMS = "action=query&prop=info&pageids="+self.pageid+"&inprop=url&format=json"
 
-		Rep = requests.get(url = WIKI_URL, params = WIKI_PARAMS)
-		data = Rep.json()
+		if datatype == 'history':
+			WIKI_PARAMS = config.WIKI_PARAMS_HISTORY_PAGEID + self.pageid
+			key = 'extract'
+		else:
+			WIKI_PARAMS = config.WIKI_PARAMS_PAGEID + self.pageid
+			key = 'fullurl'
 
-		#return WIKI_URL+"?"+WIKI_PARAMS 
-		return data['query']['pages'][self.pageid]['fullurl']
+		R = requests.get(url = WIKI_URL, params = WIKI_PARAMS)
+		data = R.json()			
+
+		return data['query']['pages'][str(self.pageid)][key]
