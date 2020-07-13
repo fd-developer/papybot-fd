@@ -1,6 +1,7 @@
 from flask import Flask, render_template, url_for, request, jsonify
 from .wiki_utils import *
 from .google_utils import *
+from .clean_query import *
 
 app = Flask(__name__)
 
@@ -18,11 +19,14 @@ def query():
     otherplaces = ""	
 
     # Récupérer la question
-    adress = request.form["query_text_form"]
+    query = request.form["query_text_form"]
+
     # Nettoyer la question
+    query = CleanQuery(query).clean()
+    print(query)
 
     # Géocoder la question
-    place = ApiGoogle(adress)
+    place = ApiGoogle(query)
     geocode_result = place.geocode()
 
     # Interroger Wikipedia
