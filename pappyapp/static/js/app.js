@@ -2,7 +2,8 @@ var map = null;
 
 // map init function
 // code found on :
-// https://nouvelle-techno.fr/actualites/pas-a-pas-inserer-une-carte-google-maps-avec-lapi-google-maps-javascript
+// https://nouvelle-techno.fr/actualites/pas-a-pas-inserer-une-carte-google-maps-avec
+// -lapi-google-maps-javascript
 
 function initMap(lat,lng) {
 	// create "map" object and insert it in HTML with ID = "map"
@@ -12,9 +13,9 @@ function initMap(lat,lng) {
 		zoom: 11, 
 		mapTypeId: google.maps.MapTypeId.ROADMAP, 
 		// ROADMAP : show classic map
-		// SATELLITE : pour les photos satellite ;
-		// HYBRID : pour afficher les photos satellite avec le plan superposé (les routes, le nom des villes) ;
-		// TERRAIN : affiche les différences de reliefs (montagnes, rivières, etc.).
+		// SATELLITE : for satellite photos ;
+		// HYBRID : to display satellite photos with the superimposed map (roads, names of cities) ;
+		// TERRAIN : displays the differences in relief (mountains, rivers, etc.).
 		mapTypeControl: true,
 		scrollwheel: false, 
 		mapTypeControlOptions: {

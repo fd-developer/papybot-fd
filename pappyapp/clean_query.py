@@ -6,12 +6,10 @@ import unicodedata
 
 class CleanQuery:
 	wordlist = []
-	query = []
 
 	def __init__(self, query):
 		self.strquery = query
 		
-
 		with open('pappyapp/static/files/stopwords.json') as json_data:
 			self.wordlist = json.load(json_data)
 

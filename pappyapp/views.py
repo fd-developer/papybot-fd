@@ -12,47 +12,53 @@ app.config.from_object('config')
 def index():
 	return render_template('index.html')
 
-@app.route('/question', methods=['GET', 'POST'])
+@app.route('/question', methods=['GET','POST'])
 def query():
     response = ""
     idPlaceFound = 0
     otherplaces = ""	
 
-    # Récupérer la question
+    """ Retrieve the question """
     query = request.form["query_text_form"]
 
-    # Nettoyer la question
+    """ Clean up the question """
     query = CleanQuery(query).clean()
     print(query)
 
-    # Géocoder la question
+    """ Geocoding the question """
     place = ApiGoogle(query)
-    geocode_result = place.geocode()
+    place.geocode()
 
-    # Interroger Wikipedia
-    response = "Je me souviens avoir visité un endroit vers <strong>" + \
-    geocode_result["city"] +"</strong>.<br>"
-    
-    wiki = ApiWikimedia()
-    pages = wiki.search_pages_by_gps(geocode_result)   
+    if place.found:
+        """ Query Wikipedia """
+        response = "Je me souviens avoir visité un endroit vers <strong>" + \
+        place.city +"</strong>.<br>"
+        
+        wiki = ApiWikimedia()  
+        pages = wiki.search_pages_by_gps(place.lat, place.lng) 
 
-    for v in pages:
-        page = ApiWikimedia()
-        if idPlaceFound == 0:
-            idPlaceFound = v['pageid']
-            response += "<br>" + page.search_data_by_pageid(idPlaceFound,'history')
-            otherplaces = "Il y a aussi plein d'autres choses à voir à moins de " \
-                "10 km de cet endroit, par exemple : <br><br>"
+        for v in pages:
+            page = ApiWikimedia()
+            if idPlaceFound == 0:
+                idPlaceFound = v['pageid']
+                response += "<br>" + page.search_data_by_pageid(idPlaceFound,'history')
+                otherplaces = "Il y a aussi plein d'autres choses à voir à moins de " \
+                    "10 km de cet endroit, par exemple : <br><br>"
 
-        # Ajout des 9 premiers endroits proches de celui trouvé
-        if v['pageid'] != idPlaceFound:
-            otherplaces += str(v['title']).split(',')[0] + \
-            "<a href='"+page.search_data_by_pageid(v['pageid'],'url')+"' target=_blanck> (Voir)</a><BR>"
+            """ Addition of the first 9 places close to the one found """
+            if v['pageid'] != idPlaceFound:
+                otherplaces += str(v['title']).split(',')[0] + \
+                "<a href='"+ page.search_data_by_pageid(v['pageid'],'url') + \
+                "' target=_blanck> (Voir)</a><BR>"
+    else:
+        response = "Je suis désolé mais je n'ai jamais visité cet endroit.<br>"\
+        "Es-tu bien sûr que tu l'as bien écrit ?<br>"\
+        "Si oui, je te propose de réessayer tout de suite avec un autre endroit ..."
 
     return {
         "response": response,
-        "lat": str(geocode_result['lat']),
-        "lng": str(geocode_result['lng']),
+        "lat": place.lat,
+        "lng": place.lng,
         "otherplaces": otherplaces
     }
 
