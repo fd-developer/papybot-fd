@@ -1,2 +1,6 @@
 /doc/*
 papybot.sublime-project
+*.pyc
+__pycache__
+env/
+.cache/
