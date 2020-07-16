@@ -4,27 +4,28 @@
 import json
 import unicodedata
 
+
 class CleanQuery:
-	wordlist = []
+    wordlist = []
 
-	def __init__(self, query):
-		self.strquery = query
-		
-		with open('pappyapp/static/files/stopwords.json') as json_data:
-			self.wordlist = json.load(json_data)
+    def __init__(self, query):
+        self.strquery = query
 
-	def strip_accents(self, s):
-	   return ''.join(c for c in unicodedata.normalize('NFD', s)
-	                  if unicodedata.category(c) != 'Mn')
+        with open('pappyapp/static/files/stopwords.json') as json_data:
+            self.wordlist = json.load(json_data)
 
-	def clean(self):
+    def strip_accents(self, s):
+        return ''.join(c for c in unicodedata.normalize('NFD', s)
+                       if unicodedata.category(c) != 'Mn')
 
-		self.strquery = self.strip_accents(self.strquery)
-		self.query = self.strquery.lower().split()
-		queryCleaned = []
+    def clean(self):
 
-		for e in self.query:
-			if e not in self.wordlist:
-				queryCleaned.append(e)
+        self.strquery = self.strip_accents(self.strquery)
+        self.query = self.strquery.lower().split()
+        queryCleaned = []
 
-		return " ".join(queryCleaned)
+        for e in self.query:
+            if e not in self.wordlist:
+            	queryCleaned.append(e)
+
+        return " ".join(queryCleaned)

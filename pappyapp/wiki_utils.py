@@ -5,6 +5,7 @@ import json
 import requests
 import config
 
+
 class ApiWikimedia:
     WIKI_URL = config.WIKI_API_URL
 
@@ -14,7 +15,7 @@ class ApiWikimedia:
         WIKI_PARAMS = config.WIKI_PARAMS_GPS
         WIKI_PARAMS['gscoord'] = str(self.lat) + "|" + str(self.lng)
 
-        R = requests.get(url = self.WIKI_URL, params = WIKI_PARAMS)
+        R = requests.get(url=self.WIKI_URL, params=WIKI_PARAMS)
         data = R.json()
 
         return data['query']['geosearch']
@@ -31,7 +32,7 @@ class ApiWikimedia:
 
         WIKI_PARAMS['pageids'] = self.pageid
 
-        R = requests.get(url = self.WIKI_URL, params = WIKI_PARAMS)
-        data = R.json()			
+        R = requests.get(url=self.WIKI_URL, params=WIKI_PARAMS)
+        data = R.json()
 
         return data['query']['pages'][str(self.pageid)][key]

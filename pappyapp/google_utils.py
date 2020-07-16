@@ -6,8 +6,10 @@ import requests
 import config
 import os
 
-class ApiGoogle:
 
+class ApiGoogle:
+    """ use google API to find gps coordinates, city name of adress asked by
+    the surfer """
     GOOGLE_URL = config.GOOGLE_API_URL
     GOOGLE_KEY = ""
     PLACE_FOUND = False
@@ -17,6 +19,9 @@ class ApiGoogle:
 
     def __init__(self, adress):
         self.adress = adress
+
+        """ GOOGLE_KEY is an environment variable stored in the operating
+        system """
         self.GOOGLE_KEY = os.getenv("GOOGLE_KEY")
 
     @property
@@ -55,5 +60,3 @@ class ApiGoogle:
     @property
     def lng(self):
         return self.LNG
-
-            

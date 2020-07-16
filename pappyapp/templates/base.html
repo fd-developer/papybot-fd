@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <title>pappybot-fd</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
@@ -10,7 +10,7 @@
 
 </head>
 
-<body background="{{ url_for('static', filename='img/fond.jpg') }}">
+<body background = "{{ url_for('static', filename='img/fond.jpg') }}">
   <script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
 
   <div class="container">
@@ -18,7 +18,7 @@
   <header>
     <div class="row marge20">
       <div class="col-sm-12 col-md-4">
-        <img id = "papy" src="{{ url_for('static', filename='img/papybot.png') }}" height="500" />
+        <img id = "papy" src="{{ url_for('static', filename='img/papybot.png') }}" height="500" alt="papy" />
       </div>
 
       <div class="col-md-8">
@@ -43,6 +43,7 @@
   {% block content %}{% endblock %}
 
   <footer>
+    <p>Frédéric DESCHAMPS</p>
   </footer>
 
   </div>
