@@ -291,6 +291,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "test_clean_query.py",
+			"settings":
+			{
+				"buffer_size": 270,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -325,13 +334,17 @@
 	"expanded_folders":
 	[
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static/files",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/tmp"
 	],
 	"file_history":
 	[
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/wiki_utils.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/test_wiki_utils.py",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/google_utils.py",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/clean_query.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/wiki_utils.py",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/__init__.py",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/index.html",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/base.html",
@@ -455,8 +468,7 @@
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Wmenu.py",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Wlist_substitute.py",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Wconfig.py",
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/main.py",
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Database.py"
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/main.py"
 	],
 	"find":
 	{
@@ -474,6 +486,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"donnée"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -491,8 +504,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "test_clean_query.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

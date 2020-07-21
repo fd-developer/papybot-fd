@@ -30,6 +30,9 @@ class ApiGoogle:
                 "key": self.GOOGLE_KEY}
 
     def geocode(self):
+        """ this method ask Google to find the name of a place and it's gps coordinates 
+        we must give parameters as adress of a place and an api key google
+        """
         self.PLACE_FOUND = False
         self.CITY = ""
         self.LAT = ""
