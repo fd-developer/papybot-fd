@@ -30,20 +30,30 @@
 
                 <textarea id="query_text_form" name="query-text-form" class="md-textarea form-control" rows="3" placeholder = "Pose moi ta question ici" autofocus></textarea>
               </div>
-              <p><button id="query-envoi" type="submit" class="btn btn-primary marge10">et cliques ici pour que je recherche cet endroit pour toi</button>
-              <button id="query_reset" type="SUBMIT" class="btn btn-primary marge10">Effacer</button>
+              <p><button id="query-envoi" type="submit" class="btn btn-primary marge10">et cliques ici pour que je recherche cet endroit pour toi
+              </button>
+              <button id="query_reset" type="submit" class="btn btn-primary marge10">Effacer</button>
               </p>
           </form>
+          <div id="wait" class = "heading marge20" style = "display: none;">Patiente un instant que je recherche l'endroit demandé ...</div>
         </div>
 
       </div>
     </div>
   </header>
+  
+  
 
   {% block content %}{% endblock %}
 
   <footer>
-    <p>Frédéric DESCHAMPS</p>
+      <div class="container">
+            <div class="row justify-content-center">
+
+                <span class="text-muted">Frédéric DESCHAMPS (<a href="https://github.com/fd-developer/papybot-fd.git" target="_blank">sources sur GiHub</a>)</span>
+
+            </div>
+        </div>
   </footer>
 
   </div>
