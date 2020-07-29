@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"marge",
+				"marge20"
+			],
+			[
+				"margin",
+				"margin-right\tproperty"
+			],
+			[
 				"pa",
 				"PARAMS"
 			],
@@ -299,6 +307,15 @@
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "pappyapp/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 2425,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -336,22 +353,29 @@
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static/css",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static/files",
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/tmp"
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static/js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/tmp"
 	],
 	"file_history":
 	[
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/test_wiki_utils.py",
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/google_utils.py",
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/clean_query.py",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/wiki_utils.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/test_google_utils.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/google_utils.py",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/test_google_utils-mock.py",
+		"/Users/fdeschamps/Desktop/Outils réseau/nc -zv 192.168.1.20 80",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static/js/jquery-3.5.1.min.js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static/js/valid_form.js",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/base.html",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static/css/style.css",
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/clean_query.py",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/__init__.py",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/index.html",
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/base.html",
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static/js/valid_form.js",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/views.py",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/utils.py",
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/static/css/style.css",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/google/map.html",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/google/app.js",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/07 - PROJET 7 - 70H - GrandPy-Bot/papybot-fd/pappyapp/templates/app.js",
@@ -464,11 +488,7 @@
 		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/.gitignore",
 		"/Users/fdeschamps/Prive/Devs/Git (OCR)/P5/Database.py",
 		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/P5.sublime-project",
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Wsearch_substitute.py",
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Wmenu.py",
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Wlist_substitute.py",
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Wconfig.py",
-		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/main.py"
+		"/Users/fdeschamps/Prive/Formation/OpenclassRoom python/05 - PROJET 5 - OpenFood/git/P5/Wsearch_substitute.py"
 	],
 	"find":
 	{
@@ -504,13 +524,13 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
 					"file": "test_clean_query.py",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 270,
@@ -530,6 +550,36 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pappyapp/templates/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 354.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -615,7 +665,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 190.0,
+	"side_bar_width": 268.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

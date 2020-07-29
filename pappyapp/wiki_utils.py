@@ -17,7 +17,7 @@ class ApiWikimedia:
 
         R = requests.get(url=self.WIKI_URL, params=WIKI_PARAMS)
         data = R.json()
-
+        print(data['query']['geosearch'][1])
         return data['query']['geosearch']
 
     def search_data_by_pageid(self, pageid, datatype):
