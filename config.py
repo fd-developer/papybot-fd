@@ -1,3 +1,6 @@
+""" list of parameters used in the application 
+note that Google_Key API is stored in an evironnement variable """
+
 import os
 
 GOOGLE_API_URL = 'https://maps.googleapis.com/maps/api/geocode/json'

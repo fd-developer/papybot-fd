@@ -11,10 +11,16 @@ app.config.from_object('config')
 @app.route('/')
 @app.route('/index/')
 def index():
-	return render_template('index.html')
+    """ route to display the index.html page. Asked when we open the
+    application with simple url """
+    return render_template('index.html')
 
 
 @app.route('/question', methods=['GET', 'POST'])
+    """ route to find an answer to the query send by user
+    return response, lat, lng, otherplaces arround adress query """
+
+
 def query():
     response = ""
     idPlaceFound = 0

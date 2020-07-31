@@ -1,6 +1,6 @@
 var map = null;
 
-// map init function
+// google map init function
 // code found on :
 // https://nouvelle-techno.fr/actualites/pas-a-pas-inserer-une-carte-google-maps-avec
 // -lapi-google-maps-javascript

@@ -8,8 +8,8 @@ import os
 
 
 class ApiGoogle:
-    """ use google API to find gps coordinates, city name of adress asked by
-    the surfer """
+    """ this class use google API to find gps coordinates, city name of adress
+    asked by the surfer and given with the parameter adress """
     GOOGLE_URL = config.GOOGLE_API_URL
     GOOGLE_KEY = ""
     PLACE_FOUND = False
@@ -26,13 +26,16 @@ class ApiGoogle:
 
     @property
     def params_url(self):
+        """ replace spaces in the adress by +
+        return json string with adress and key google used in the
+        Google API """
         return {"address": self.adress.replace(" ", "+"),
                 "key": self.GOOGLE_KEY}
 
     def geocode(self):
-        """ this method ask Google to find the name of a place and it's gps coordinates 
-        we must give parameters as adress of a place and an api key google
-        """
+        """ this method ask Google to find the name of a place and it's gps
+        coordinates we must give parameters send by params_url() as adress of
+        a place and an api key google """
         self.PLACE_FOUND = False
         self.CITY = ""
         self.LAT = ""
@@ -48,6 +51,7 @@ class ApiGoogle:
                 self.LAT = response["geometry"]["location"]["lat"]
                 self.LNG = response["geometry"]["location"]["lng"]
 
+    """ list of properties available for an object of ApiGoogle type """
     @property
     def found(self):
         return self.PLACE_FOUND
